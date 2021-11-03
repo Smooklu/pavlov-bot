@@ -35,7 +35,6 @@ class Polling(commands.Cog):
     async def new_poll(self, pollings, server: str, poll: str):
             while True:
                 try:
-
                     if pollings.get("type") == "player":
                         interval = float(pollings.get("polling_interval")) * 60
                         await asyncio.sleep(interval)
